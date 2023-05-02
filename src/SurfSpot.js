@@ -1,21 +1,15 @@
-import React from 'react'
 
-const SurfSpot = (props) => {
-    //console.log(props)
-const spots = props
-console.log(spots)
+const SurfSpot = ({spots, handleDelete}) => {
 
-const spottest = spots.map((spot) => (console.log(spot))
-    // <div className="spot" key={spot.id}>
-    //     <h2>{ spot.title }</h2>
-    //     <p> Location { spot.location }</p>
-    // </div>
-)
     return (
         <div className="surf-spot"> 
-            {spottest}
+            {spots.map((spot) => (<div className="spot" key={spot.id}>
+            <h2>{ spot.title }</h2>
+            <p> Location { spot.location }</p>
+            <button onClick={() => handleDelete(spot.id)}> delete spot</button>
+            </div>))}
         </div>
     );
-}
- 
+
+    }
 export default SurfSpot;

@@ -9,9 +9,14 @@ const [spots, setSpots] = useState([
     { title: 'Jaws', body: 'Biggest waves in the world', location: 'Maui,Hawaii', id: 3}
 ]);
 
+const handleDelete = (id) => {
+ const newSpots = spots.filter(spot => spot.id !== id);
+ setSpots(newSpots)
+}
+
     return(
         <div className="home"> 
-            <SurfSpot spots={spots} />
+            <SurfSpot spots={spots} handleDelete={handleDelete} />
         </div>
     )
 }

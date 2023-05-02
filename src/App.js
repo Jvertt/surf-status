@@ -11,7 +11,6 @@ function App() {
   return (
     <div className="App">
       <NavBar/>
-      <SurfSpot/>
       <NewSpot/>
       <div className="content">
         <Home/>
