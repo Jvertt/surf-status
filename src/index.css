@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 /* base styles */
 * {
   margin: 0;
-  font-family: "Quicksand";
-  color: #333;
+  font-family: "Pacifico";
+  color: rgb(255, 255, 255);
 }
 .navbar {
   padding: 20px;
@@ -12,10 +12,12 @@
   align-items: center;
   max-width: 600px;
   margin: 0 auto;
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid #333;
+  background-color: #336699;
 }
 .navbar h1 {
-  color: #f1356d;
+  color: #ffcc00;
+  text-shadow: 1px 1px #333;
 }
 .navbar .links {
   margin-left: auto;
@@ -24,25 +26,32 @@
   margin-left: 16px;
   text-decoration: none;
   padding: 6px;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #ffcc00;
+  box-shadow: 1px 1px #333;
 }
 .navbar a:hover {
-  color: #f1356d;
+  color: #336699;
+  background-color: #fff;
 }
 .content {
   max-width: 600px;
   margin: 40px auto;
   padding: 20px;
 }
-.spot-preview {
+.spot {
   padding: 10px 16px;
   margin: 20px 0;
-  border-bottom: 1px solid #fafafa;
+  border-bottom: 1px solid #fff;
+  background-color: #336699;
 }
-.spot-preview:hover {
+.spot:hover {
   box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
 }
-.spot-preview h2 {
-  font-size: 20px;
-  color: #f1356d;
+.spot h2 {
+  font-size: 30px;
+  color: #ffcc00;
   margin-bottom: 8px;
+  text-shadow: 1px 1px #333;
 }
