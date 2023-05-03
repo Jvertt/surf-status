@@ -5,6 +5,7 @@ import NavBar from "./NavBar"
 import SurfSpot from "./SurfSpot";
 import NewSpot from "./NewSpot";
 import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import SurfDetails from "./SurfDetails";
 
 
 function App() {
@@ -21,6 +22,9 @@ function App() {
             </Route>
             <Route path="/NewSpot">
               <NewSpot />
+            </Route>
+            <Route path="/spots/:id">
+              <SurfDetails />
             </Route>
           </Switch>
        </div>
