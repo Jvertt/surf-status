@@ -6,6 +6,7 @@
   font-family: "Pacifico";
   color: rgb(255, 255, 255);
 }
+
 .navbar {
   padding: 20px;
   display: flex;
@@ -15,13 +16,16 @@
   border-bottom: 1px solid #333;
   background-color: #336699;
 }
+
 .navbar h1 {
   color: #ffcc00;
   text-shadow: 1px 1px #333;
 }
+
 .navbar .links {
   margin-left: auto;
 }
+
 .navbar a {
   margin-left: 16px;
   text-decoration: none;
@@ -31,27 +35,58 @@
   background-color: #ffcc00;
   box-shadow: 1px 1px #333;
 }
+
 .navbar a:hover {
   color: #336699;
   background-color: #fff;
 }
+
 .content {
   max-width: 600px;
   margin: 40px auto;
   padding: 20px;
 }
+
 .spot {
+  position: relative;
   padding: 10px 16px;
   margin: 20px 0;
   border-bottom: 1px solid #fff;
   background-color: #336699;
+  border-radius: 10px;
 }
+
 .spot:hover {
-  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
 }
+
 .spot h2 {
   font-size: 30px;
   color: #ffcc00;
   margin-bottom: 8px;
   text-shadow: 1px 1px #333;
+}
+
+.spot button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: #ff6666;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: bold;
+  width: 45px;
+  height: 35px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spot button:hover {
+  background-color: #ff4444;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }

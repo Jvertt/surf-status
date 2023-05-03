@@ -1,22 +1,29 @@
 import React from "react";
-import { useState } from 'react';
+import { useState, useEffect} from 'react';
 import SurfSpot from './SurfSpot'
 
 const Home = () => {
-const [spots, setSpots] = useState([
-    { title: 'Honolua bay', body: 'World famous surf spot', location: 'Maui,Hawaii', id: 1},
-    { title: 'Breakwall', body: 'Famous beginner surf spot', location: 'Maui,Hawaii', id: 2},
-    { title: 'Jaws', body: 'Biggest waves in the world', location: 'Maui,Hawaii', id: 3}
-]);
+const [spots, setSpots] = useState(null);
 
 const handleDelete = (id) => {
  const newSpots = spots.filter(spot => spot.id !== id);
  setSpots(newSpots)
 }
 
+useEffect(() => {
+fetch('http://localhost:3000/spots')
+    .then(res => {
+        return res.json()
+})
+    .then((data) => {
+        console.log(data);
+        setSpots(data)
+    });
+}, [])
+
     return(
         <div className="home"> 
-            <SurfSpot spots={spots} handleDelete={handleDelete} />
+            {spots && <SurfSpot spots={spots} handleDelete={handleDelete} />}
         </div>
     )
 }

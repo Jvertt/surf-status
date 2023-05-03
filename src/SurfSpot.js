@@ -6,7 +6,7 @@ const SurfSpot = ({spots, handleDelete}) => {
             {spots.map((spot) => (<div className="spot" key={spot.id}>
             <h2>{ spot.title }</h2>
             <p> Location { spot.location }</p>
-            <button onClick={() => handleDelete(spot.id)}> delete spot</button>
+            <button onClick={() => handleDelete(spot.id)} > ➖ </button>
             </div>))}
         </div>
     );
