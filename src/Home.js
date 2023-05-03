@@ -1,30 +1,12 @@
 import React from "react";
 import { useState, useEffect} from 'react';
 import SurfSpot from './SurfSpot'
+import useFetch from "./useFetch";
 
 const Home = () => {
-const [spots, setSpots] = useState(null);
-const [isLoading, setIsLoading] = useState(true);
-const [error, setError] = useState(null);
+const { data: spots, isLoading, error} = useFetch('http://localhost:3000/spots')
 
-useEffect(() => {
-fetch('http://localhost:3000/spots')
-    .then(res => {
-        if(!res.ok){
-            throw Error('error fetching data!')
-        }
-        return res.json()
-})
-    .then((data) => {
-        setSpots(data);
-        setIsLoading(false);
-        setError(null)
-    })
-    .catch(err => {
-        setIsLoading(false)
-        setError(err.message);
-    })
-}, []);
+
 
     return(
         <div className="home"> 
