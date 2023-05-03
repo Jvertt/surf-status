@@ -7,6 +7,7 @@
   color: rgb(255, 255, 255);
 }
 
+/* navbar styles */
 .navbar {
   padding: 20px;
   display: flex;
@@ -41,12 +42,16 @@
   background-color: #fff;
 }
 
+/* content styles */
 .content {
   max-width: 600px;
   margin: 40px auto;
   padding: 20px;
+  height: 400px; /* added height to enable scrollbar */
+  overflow-y: auto; /* added scrollbar */
 }
 
+/* surf spot styles */
 .spot {
   position: relative;
   padding: 10px 16px;
@@ -66,7 +71,31 @@
   margin-bottom: 8px;
   text-shadow: 1px 1px #333;
 }
+
 .surf-spot a{
   text-decoration: none;
 }
 
+.surf-details {
+  position: relative;
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fff;
+  background-color: #336699;
+  border-radius: 10px;
+}
+
+.surf-details:hover {
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.surf-details h2 {
+  font-size: 30px;
+  color: #ffcc00;
+  margin-bottom: 8px;
+  text-shadow: 1px 1px #333;
+}
+
+.surf-details a{
+  text-decoration: none;
+}
