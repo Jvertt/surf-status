@@ -1,17 +1,30 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { useHistory } from "react-router-dom";
 
 
 const NewSpot = () => {
-    const [title, setTitle] = useState('')
-    const [body, setBody] = useState('')
-    const [location, setLocation] = useState('Maui')
+    const [title, setTitle] = useState('');
+    const [body, setBody] = useState('');
+    const [location, setLocation] = useState('Maui');
+    const [isPending, setisPending] = useState(false);
+    const redirect = useHistory()
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const blog = {title, body,location}
+        const spot = {title, body,location};
 
-        console.log(blog)
+        setisPending(true)
 
+        fetch('http://localhost:3000/spots', {
+            method: 'POST',
+            headers: {"Content-Type": "application/json" },
+            body: JSON.stringify(spot)
+        }).then(() => {
+            console.log('new spot')
+            setisPending(false);
+        })
+        
+      
     }
 
     return(
@@ -44,7 +57,8 @@ const NewSpot = () => {
                 <option value= 'molokai'> molokai' </option>
                 <option value= 'Lanai'> Lanai </option>
             </select>
-            <button> add spot</button>
+            { !isPending && <button> add spot</button>}
+            { isPending && <button> adding spot...</button>}
         </form>
         </div>
     )
