@@ -1,8 +1,10 @@
 import React from "react"
 
-function NewSpot(){
+const NewSpot = () => {
     return(
-        <div className="newSpot"> </div>
+        <div className="new-spot"> 
+        <h2> Add a new spot!</h2>
+        </div>
     )
 }
 
