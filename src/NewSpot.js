@@ -22,6 +22,7 @@ const NewSpot = () => {
         }).then(() => {
             console.log('new spot')
             setisPending(false);
+            redirect.push('/')
         })
         
       
