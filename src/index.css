@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+
 
 /* base styles */
 * {
@@ -7,7 +9,8 @@
 
 /* navbar styles */
 .navbar {
-  font-family: "Pacifico";
+  font-size: 20px;
+  font-family: 'Bangers', cursive;
   padding: 20px;
   display: flex;
   align-items: center;
@@ -15,9 +18,11 @@
   margin: 0 auto;
   border-bottom: 1px solid #333;
   background-color: #336699;
+  border-radius: 5px;
 }
 
 .navbar h1 {
+  /* font-size: ; */
   color: #ffcc00;
   text-shadow: 1px 1px #333;
 }
@@ -50,7 +55,7 @@
 
 /* surf spot styles */
 .spot {
-  font-family: "Pacifico";
+  font-family: 'Bangers', cursive;
   position: relative;
   padding: 10px 16px;
   margin: 20px 0;
@@ -64,8 +69,8 @@
 }
 
 .spot h2 {
-  font-family: "Pacifico";
-  font-size: 30px;
+  font-family: 'Bangers', cursive;
+  font-size: 40px;
   color: #ffcc00;
   margin-bottom: 8px;
   text-shadow: 1px 1px #333;
@@ -76,7 +81,7 @@
 }
 
 .surf-details {
-  font-family: "Pacifico";
+  font-family: 'Bangers', cursive;
   position: relative;
   padding: 10px 16px;
   margin: 20px 0;
@@ -90,8 +95,8 @@
 }
 
 .surf-details h2 {
-  font-family: "Pacifico";
-  font-size: 30px;
+  font-family: 'Bangers', cursive;
+  font-size: 40px;
   color: #ffcc00;
   margin-bottom: 8px;
   text-shadow: 1px 1px #333;
@@ -102,7 +107,7 @@
 }
 
 .new-spot{
-  font-family: "Pacifico";
+  font-family: 'Bangers', cursive;
   max-width: 400px;
   margin: 0 auto;
   text-align: center;
@@ -113,7 +118,7 @@
   display: block;
 }
 .new-spot h2 {
-  font-size: 30px;
+  font-size: 40px;
   color: #ffcc00;
   margin-bottom: 30px;
   background: #336699;
@@ -124,18 +129,18 @@
   width: 100%;
   padding: 6px 10px;
   margin: 10px 0;
-  border: 3px solid #336699;
+  border: 5px solid #336699;
   border-radius: 10px;
   box-sizing: border-box;
   display: block;
 }
 .new-spot button {
-  font-family: "Pacifico";
+  font-family: 'Bangers', cursive;
   background: #336699;
-  font-size: 20px;
+  font-size: 30px;
   color: #ffcc00;
   border: 0;
-  padding: 4px;
+  padding: 10px;
   border-radius: 8px;
   cursor: pointer;
 }
