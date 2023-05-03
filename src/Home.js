@@ -1,18 +1,18 @@
-import SurfSpot from './SurfSpot'
-import useFetch from "./useFetch";
+    import SurfSpot from './SurfSpot'
+    import useFetch from "./useFetch";
 
-const Home = () => {
-const { data: spots, isLoading, error} = useFetch('http://localhost:3000/spots')
+    const Home = () => {
+    const { data: spots, isLoading, error} = useFetch('http://localhost:3000/spots')
 
 
 
-    return(
-        <div className="home"> 
-            { error && <div> {error} </div>}
-            { isLoading && <div> Loading... </div>}
-            {spots && <SurfSpot spots={spots} />}
-        </div>
-    )
-}
+        return(
+            <div className="home"> 
+                { error && <div> {error} </div>}
+                { isLoading && <div> Loading... </div>}
+                {spots && <SurfSpot spots={spots} />}
+            </div>
+        )
+    }
 
-export default Home;
+    export default Home;

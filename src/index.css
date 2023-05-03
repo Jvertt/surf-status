@@ -2,13 +2,12 @@
 
 /* base styles */
 * {
-  margin: 0;
-  font-family: "Pacifico";
-  color: rgb(255, 255, 255);
+  color:#ffcc00 ;
 }
 
 /* navbar styles */
 .navbar {
+  font-family: "Pacifico";
   padding: 20px;
   display: flex;
   align-items: center;
@@ -46,13 +45,12 @@
 .content {
   max-width: 600px;
   margin: 40px auto;
-  padding: 20px;
-  height: 400px; /* added height to enable scrollbar */
-  overflow-y: auto; /* added scrollbar */
+  overflow-y: auto;
 }
 
 /* surf spot styles */
 .spot {
+  font-family: "Pacifico";
   position: relative;
   padding: 10px 16px;
   margin: 20px 0;
@@ -66,6 +64,7 @@
 }
 
 .spot h2 {
+  font-family: "Pacifico";
   font-size: 30px;
   color: #ffcc00;
   margin-bottom: 8px;
@@ -77,6 +76,7 @@
 }
 
 .surf-details {
+  font-family: "Pacifico";
   position: relative;
   padding: 10px 16px;
   margin: 20px 0;
@@ -90,6 +90,7 @@
 }
 
 .surf-details h2 {
+  font-family: "Pacifico";
   font-size: 30px;
   color: #ffcc00;
   margin-bottom: 8px;
@@ -98,4 +99,43 @@
 
 .surf-details a{
   text-decoration: none;
+}
+
+.new-spot{
+  font-family: "Pacifico";
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.new-spot label {
+  color: #ffcc00;
+  text-align: left;
+  display: block;
+}
+.new-spot h2 {
+  font-size: 30px;
+  color: #ffcc00;
+  margin-bottom: 30px;
+  background: #336699;
+  border-radius: 10px;
+}
+.new-spot input, .new-spot textarea, .new-spot select {
+  color: black;
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 3px solid #336699;
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: block;
+}
+.new-spot button {
+  font-family: "Pacifico";
+  background: #336699;
+  font-size: 20px;
+  color: #ffcc00;
+  border: 0;
+  padding: 4px;
+  border-radius: 8px;
+  cursor: pointer;
 }

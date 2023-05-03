@@ -24,4 +24,5 @@ const NewSpot = () => {
     )
 }
 
+
 export default NewSpot;
