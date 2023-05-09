@@ -1,12 +1,14 @@
-import image from "./mysurf.jpeg";
+import GalleryCard from "./GalleryCard";
 
-const Gallery = () => {
-   
+const Gallery = ({data}) => {
+
+    // {data.map(spot => console.log(spot))}
 
     return (
         <div className="gallery">
-            <img src={image} alt="Honolua Bay" />
-            <h2 className="title">Honolua Bay</h2>
+            {data ? data.map((spot) => { 
+                return <GalleryCard key={spot.id} data={spot} />
+            }): null}
         </div>
     );
 }

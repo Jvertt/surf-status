@@ -1,16 +1,16 @@
     import SurfSpot from './SurfSpot'
     import useFetch from "./useFetch";
 
-    const Home = () => {
-    const { data: spots, isLoading, error} = useFetch('http://localhost:3000/spots')
+    const Home = ({data}) => {
+    // const { data: spots, isLoading, error} = useFetch('http://localhost:3000/spots')
 
 
 
         return(
             <div className="home"> 
-                { error && <div> {error} </div>}
-                { isLoading && <div> Loading... </div>}
-                {spots && <SurfSpot spots={spots} />}
+                {/* { error && <div> {error} </div>}
+                { isLoading && <div> Loading... </div>} */}
+                {data && <SurfSpot spots={data} />}
             </div>
         )
     }

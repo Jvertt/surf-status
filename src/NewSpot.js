@@ -2,17 +2,17 @@ import { useState } from "react";
 import { useHistory } from "react-router-dom";
 
 
-const NewSpot = () => {
+const NewSpot = ({handleAdd}) => {
     const [title, setTitle] = useState('');
+    const [image, setImage] = useState('')
     const [body, setBody] = useState('');
     const [location, setLocation] = useState('Maui');
     const [isPending, setisPending] = useState(false);
     const redirect = useHistory()
 
     const handleSubmit = (e) => {
-        e.preventDefault();
-        const spot = {title, body,location};
-
+        const spot = {title, image, body,location};
+        e.preventDefault()
         setisPending(true)
 
         fetch('http://localhost:3000/spots', {
@@ -20,11 +20,10 @@ const NewSpot = () => {
             headers: {"Content-Type": "application/json" },
             body: JSON.stringify(spot)
         }).then(() => {
-            console.log('new spot')
-            setisPending(false);
             redirect.push('/')
-        })             
-        
+        })
+
+        handleAdd(spot)
       
     }
 
@@ -39,6 +38,12 @@ const NewSpot = () => {
             value={title}
             onChange={ (e) => setTitle(e.target.value)}
             />
+            <label> Image </label>
+            <textarea
+            required
+            value ={image}
+            onChange={ (e) => setImage(e.target.value)}
+            ></textarea>
             <label> Surf body</label>
             <textarea
             required

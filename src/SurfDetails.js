@@ -1,7 +1,7 @@
 import { useParams, useHistory} from "react-router-dom/cjs/react-router-dom";
 import useFetch from "./useFetch";
 
-const SurfDetails = () => {
+const SurfDetails = ({handleDelete}) => {
     const { id } = useParams();
     const { data: spot, error, isLoading} = useFetch('http://localhost:3000/spots/' + id)
     const redirect = useHistory();
@@ -12,6 +12,7 @@ const SurfDetails = () => {
         }).then(() => {
             redirect.push('/');
         })
+        handleDelete(id)
     }
     return ( 
         <div className="surf-details">
