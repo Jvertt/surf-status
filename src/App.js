@@ -3,6 +3,7 @@ import "./index.css";
 import Home from "./Home"
 import NavBar from "./NavBar"
 import SurfSpot from "./SurfSpot";
+import Gallery from "./Gallery";
 import NewSpot from "./NewSpot";
 import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import SurfDetails from "./SurfDetails";
@@ -18,6 +19,9 @@ function App() {
           <Switch>
             <Route exact path="/">
               <Home />
+            </Route>
+            <Route path="/Gallery">
+              <Gallery />
             </Route>
             <Route path="/NewSpot">
               <NewSpot />

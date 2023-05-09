@@ -2,15 +2,24 @@
   "spots": [
     {
       "title": "Honolua bay",
+      "image": "https://www.perfectwavetravel.com/wp-content/uploads/2019/12/PNG-TheSlab.jpg",
       "body": "World famous surf spot",
-      "location": "Maui,Hawaii",
+      "location": "Maui",
       "id": 1
     },
     {
       "title": "Jaws",
+      "image": "https://www.perfectwavetravel.com/wp-content/uploads/2019/12/PNG-TheSlab.jpg",
       "body": "biggest waves in the world",
-      "location": "Maui,Hawaii",
+      "location": "Maui",
       "id": 2
+    },
+    {
+      "title": "Lahaina, Breakwall",
+      "image": "https://www.perfectwavetravel.com/wp-content/uploads/2019/12/PNG-TheSlab.jpg",
+      "body": "Fun beginner spot",
+      "location": "Maui",
+      "id": 3
     }
   ]
 }
