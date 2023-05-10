@@ -13,6 +13,13 @@
       "body": "Biggest Waves in the world!",
       "location": "Maui",
       "id": 2
+    },
+    {
+      "title": "Pipline",
+      "image": "https://s3.amazonaws.com/darkroom-cdn/2017/02/AFP-Getty_TOPSHOT-US-HAWAII-SURFING-PIPELINE.jpg",
+      "body": "Amazing surf!",
+      "location": "Maui",
+      "id": 3
     }
   ]
 }

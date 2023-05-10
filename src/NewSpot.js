@@ -14,17 +14,14 @@ const NewSpot = ({handleAdd}) => {
         const spot = {title, image, body,location};
         e.preventDefault()
         setisPending(true)
-
         fetch('http://localhost:3000/spots', {
             method: 'POST',
             headers: {"Content-Type": "application/json" },
             body: JSON.stringify(spot)
-        }).then(() => {
-            redirect.push('/')
         })
-
-        handleAdd(spot)
-      
+        .then((r) => r.json())
+        .then(newObj => handleAdd(newObj))
+        redirect.push('/')
     }
 
     return(

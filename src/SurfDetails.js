@@ -12,7 +12,7 @@ const SurfDetails = ({handleDelete}) => {
         }).then(() => {
             redirect.push('/');
         })
-        handleDelete(id)
+        handleDelete()
     }
     return ( 
         <div className="surf-details">
