@@ -6,7 +6,7 @@ const NewSpot = ({handleAdd}) => {
     const [title, setTitle] = useState('');
     const [image, setImage] = useState('')
     const [body, setBody] = useState('');
-    const [location, setLocation] = useState('Maui');
+    const [location, setLocation] = useState('');
     const [isPending, setisPending] = useState(false);
     const redirect = useHistory()
 
@@ -48,18 +48,11 @@ const NewSpot = ({handleAdd}) => {
             onChange={ (e) => setBody(e.target.value)}
             ></textarea>
             <label> Location </label>
-            <select>
-                value={location}
-                onChange={(e) => setLocation(e.target.value)}
-                <option value= 'Maui'> maui </option>
-                <option value= 'Oahu'> Oahu </option>
-                <option value= 'Kauai'> Kauai </option>
-                <option value= 'Hawaii'> Hawaii </option>
-                <option value= 'niihau'> niihau </option>
-                <option value= 'kahoolawe'> kahoolawe </option>
-                <option value= 'molokai'> molokai' </option>
-                <option value= 'Lanai'> Lanai </option>
-            </select>
+            <textarea
+            required
+            value ={location}
+            onChange={ (e) => setLocation(e.target.value)}
+            ></textarea>
             { !isPending && <button> add spot</button>}
             { isPending && <button> adding spot...</button>}
         </form>
