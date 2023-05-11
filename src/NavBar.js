@@ -8,7 +8,6 @@ function NavBar(){
         <div className="links">
           <Link to="/">Home</Link>
           <Link to="/Gallery">Gallery</Link>
-          {/* <Link to="/SurfSpot">Surf Spot</Link> */}
           <Link to="/NewSpot">New Spot</Link>
         </div>
       </nav>
