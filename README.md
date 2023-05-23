@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+## Phase 2 Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Immerse yourself in the vibrant surf culture with this awesome app, your ultimate destination for preserving and exploring cherished surf memories. Seamlessly organized into three tabs, this app offers a comprehensive experience that captures the essence of each surf spot. The first tab presents a collection of surf spots in a sleek card format, featuring their unique names and locations, allowing you to effortlessly navigate the coastal tapestry. In the second tab, indulge your senses with a captivating gallery showcasing vivid images of each surf spot, accompanied by their alluring names. Prepare to be inspired as you embark on a visual journey through the majestic waves. But the excitement doesn't end there. With the third tab, you hold the power to contribute to this ever-growing surf sanctuary by adding new spots, ensuring the app's dynamic gallery is continuously enriched with hidden gems. So, dive in, explore, and become an active participant in this thriving surf community as you unlock new horizons and share the stoke with fellow wave riders.
 
-## Available Scripts
+## Table of Contents
+Prerequisites
+Usage
+Acknowledgments
+Contact
 
-In the project directory, you can run:
+## Prerequisites
+This project is written in React,HTML and CSS
 
-### `npm start`
+## Usage
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+In the first tab, you'll find a treasure trove of surf spots, neatly presented with their names and locations. Explore the diverse array of options and discover new destinations that beckon you to paddle out and catch those perfect waves.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Switching to the second tab, prepare to feast your eyes on a mesmerizing gallery of stunning images. Each picture captures the essence of a surf spot, accompanied by its evocative name. Let the visuals transport you to the heart of the action and fuel your surf stoke.
 
-### `npm test`
+Now, brace yourself for the thrill of the third tab, where you become an active contributor to the surf community. Take charge and add new surf spots, sharing your favorite hidden gems with fellow wave enthusiasts. Watch as the app's collection grows and evolves, shaped by the collective passion of surfers like yourself.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Acknowledgments
+I was the only contributor to this project
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contact
+Name: Justin Verthein
+Email: justinmackay88@hotmail.com
+blog post:
