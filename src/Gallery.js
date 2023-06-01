@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import GalleryCard from "./GalleryCard";
 
 const Gallery = ({ data }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0)
 
 
   useEffect(() => {

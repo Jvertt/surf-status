@@ -45,26 +45,26 @@ const NewSpot = ({ handleAdd }) => {
           onChange={handleChange}
         />
         <label>Image</label>
-        <textarea
+        <input
           required
           name="image"
           value={spot.image}
           onChange={handleChange}
-        ></textarea>
+        ></input>
         <label>Surf body</label>
-        <textarea
+        <input
           required
           name="body"
           value={spot.body}
           onChange={handleChange}
-        ></textarea>
+        ></input>
         <label>Location</label>
-        <textarea
+        <input
           required
           name="location"
           value={spot.location}
           onChange={handleChange}
-        ></textarea>
+        ></input>
         <button>add spot</button>
       </form>
     </div>

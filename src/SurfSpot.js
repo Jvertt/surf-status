@@ -4,6 +4,7 @@ const SurfSpot = ({spots}) => {
 
     return (
         <div className="surf-spot"> 
+        
             {spots.map((spot) => (<div className="spot" key={spot.id}>
                 <Link to={`/spots/${spot.id}`}>
                     <h2>{ spot.title }</h2>
