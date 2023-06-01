@@ -5,6 +5,7 @@
       "image": "https://b1972687.smushcdn.com/1972687/wp-content/uploads/2021/09/Honolua-Bay-Post-5-3.jpg?lossy=1&strip=1&webp=1",
       "body": "World Famous!",
       "location": "Maui",
+      "visited": true,
       "id": 1
     },
     {
@@ -12,6 +13,7 @@
       "image": "https://a.espncdn.com/photo/2016/0125/r47177_1600x1014xx.jpg",
       "body": "Biggest Waves in the world!",
       "location": "Maui",
+      "visited": true,
       "id": 2
     },
     {
@@ -19,6 +21,7 @@
       "image": "https://s3.amazonaws.com/darkroom-cdn/2017/02/AFP-Getty_TOPSHOT-US-HAWAII-SURFING-PIPELINE.jpg",
       "body": "Amazing surf!",
       "location": "Maui",
+      "visited": true,
       "id": 3
     },
     {
@@ -26,6 +29,7 @@
       "image": "https://w0.peakpx.com/wallpaper/126/797/HD-wallpaper-big-wave-surfer-surfer-portugal-18-january-2018-big-wave-nazare.jpg",
       "body": "80 ft wave",
       "location": "Portugal",
+      "visited": true,
       "id": 4
     }
   ]

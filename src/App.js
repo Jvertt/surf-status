@@ -9,15 +9,13 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import SurfDetails from "./SurfDetails";
 
 function App() {
-  const [data, setData] = useState(null);
-  const [isLoading, setIsLoading] = useState(true);
+  const [data, setData] = useState([]);
 
   useEffect(() => {
     fetch("http://localhost:3000/spots")
       .then(response => response.json())
       .then(spots => {
         setData(spots);
-        setIsLoading(false);
       });
   }, []);
 
@@ -37,10 +35,10 @@ function App() {
         <div className="content">
           <Switch>
             <Route exact path="/">
-              <Home data={data} />
+              <Home data={data}/>
             </Route>
             <Route path="/Gallery">
-              <Gallery data={data} />
+              <Gallery data={data}/>
             </Route>
             <Route path="/NewSpot">
               <NewSpot handleAdd={handleAdd} />

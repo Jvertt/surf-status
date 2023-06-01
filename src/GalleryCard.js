@@ -4,7 +4,6 @@ const GalleryCard = ({data}) => {
             <img src={data.image} alt={data.title} />
             <br/><br/>
             <label> {data.title}</label>
-            {/* <h2> {data.body} </h2> */}
         </div>
     );
 }
